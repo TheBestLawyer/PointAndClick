@@ -1,10 +1,43 @@
 body{
     background-color: black;
     color: white;
+    display: grid;
+    grid-template-columns: auto 800px auto;
+}
+
+#mainTitle{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    text-align: center;
 }
 
 #gameWindow{
     width: 800px;
     height: 608px;
     background-color: blue;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    position: relative;
+}
+
+#mainCharacter{
+    top: 20px;
+    left: 400px;
+}
+
+.gameObject{
+    position: absolute;
+    transition: all 1s ease-in-out;
+}
+
+.foreground{
+    z-index: 1000;
+}
+
+.character{
+    z-index: 100;
+}
+
+.background{
+    z-index: 0;
 }
