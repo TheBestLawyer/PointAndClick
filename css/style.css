@@ -25,6 +25,20 @@ body{
     left: 400px;
 }
 
+#tree1{
+    width: 32px;
+    height: 64px;
+    left: 20px;
+    top: 20px;
+}
+
+#rock1{
+    width: 32px;
+    height: 64px;
+    left: 50px;
+    top: 50px;
+}
+
 .gameObject{
     position: absolute;
     transition: all 1s ease-in-out;
