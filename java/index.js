@@ -11,14 +11,14 @@ gameWindow.onclick = function(e) {
     mainCharacter.style.top = y - offsetCharacter + "px";
     
     
-    console.log(x + " " + y);
-    switch(e.target.id){
-        case "tree1":
-            console.log("I want to burn it")
-            break;
-        case "rock1"
-            console.log("Rock!")
-            break;
-            default:
-    }
+    //console.log(x + " " + y);
+    //switch(e.target.id){
+        //case "tree1":
+            //console.log("I want to burn it")
+            //break;
+        //case "rock1"
+            //console.log("Rock!")
+            //break;
+
+    //}
 }
