@@ -11,6 +11,23 @@ body{
     text-align: center;
 }
 
+/*Dialog bar*/
+#dialogueBar{
+    bottom: 0px;
+    left: 0px;
+    width: 800px;
+    height: 64px;
+}
+
+#dialogueContent{
+    position: relative;
+}
+
+#mainCharacterSpeech{
+    top: 0px;
+    left: 80px;
+}
+
 #gameWindow{
     width: 800px;
     height: 608px;
@@ -21,27 +38,29 @@ body{
 }
 
 #mainCharacter{
-    top: 20px;
-    left: 400px;
+    top: 10px;
+    left: 30px;
 }
 
 #tree1{
     width: 32px;
-    height: 64px;
-    left: 20px;
-    top: 20px;
+    height: 84px;
+    left: 353px;
+    top: 486px;
 }
 
 #rock1{
     width: 32px;
-    height: 64px;
-    left: 50px;
-    top: 50px;
+    height: 50px;
+    left: 225px;
+    top: 139px;
 }
 
+/*classes*/
 .gameObject{
     position: absolute;
     transition: all 1s ease-in-out;
+    background-color: #fff;
 }
 
 .foreground{
@@ -54,4 +73,15 @@ body{
 
 .background{
     z-index: 0;
+}
+
+.speech-bubble{
+    background: white;
+    border-radius: 60px;
+    color: #000;
+    padding: 5px 5px 5px 20px;
+    font-size: 12px;
+    opacity: 1;
+    width: 300px;
+    transition: all 1s ease-in-out;
 }
