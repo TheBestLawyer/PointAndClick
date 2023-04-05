@@ -12,32 +12,43 @@
 <body>
     <h1 id="mainTitle"></h1>
     <div id="gameWindow">
-    <!--dialogue bar-->
-    <div id="dialogueBar" class="gameObject foreground">
+            <!--dialogue bar-->
+     <div id="dialogueBar" class="gameObject foreground">
         <div id="dialogueContent">
-            <img id="hero" class="gameObject foreground" src="" alt="main character">
-            <div id="mainCharacterSpeech" class="gameObject foreground speech-bubble"></div>
-        </div>
+            <div id="brownBar" class="gameObject foreground"></div>
+
+             <img id="hero" class="gameObject foreground" src="img/Portrait.png" alt="main character">
+             <div id="mainCharacterSpeech" class="gameObject foreground speech-bubble">...</div>
+             <div id="counterSpeech" class="gameObject foreground speech-bubble">...</div>
+             <img id="counterCharacter" class="gameObject foreground" src="img/Sil left.png" alt="counter character">
+         </div>
+      </div>
+
+      <!--foreground-->
+      <div id="tree1" class="gameObject foreground"></div>
+      <div id="rock1" class="gameObject foreground"></div>
+      <div id="Sil" class="gameObject foreground"></div>
+      <div id="altar" class="gameObject foreground"></div>
+      
+      <!--maincharacter-->
+      <div id="mainCharacter" class="gameObject character">
+         <img src="img/Dude_Monster.png" alt="Main Character">
+       </div>
+
+      <!--background-->
+      <div id="tileMap" class="gameObject background">
+         <img src="img/map.png" alt="Tile Map">
+       </div>
+
+       <audio id="characterAudio">
+        <source src="Audio/y2mate.com - RIZZ Sound Effect.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="counterAudio">
+        <source src="Audio/y2mate.com - Bad to the bone  Sound Effect HD.mp3" type="audio/mpeg">
+    </audio>
+
     </div>
-
-    <!--foreground-->
-    <div id="tree1" class="gameObject foreground"></div>
-    <div id="rock1" class="gameObject foreground"></div>
-
-    <!--maincharacter-->
-    <div id="mainCharacter" class="gameObject Character">
-        <img src="img/Dude_Monster.png" alt="Main Character">
-
-
-    </div>
-
-    <!--background-->
-    <div id="tileMap" class="gameObject background">
-        <img src="img/map.png" alt="Tile Map">
-    </div>
-
-    </div>
-    <script src="js/index.js"></script>
+    <script src="java/index.js"></script>
 </body>
 
 
